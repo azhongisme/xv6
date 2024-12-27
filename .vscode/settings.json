@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "random": "c",
-        "user.h": "c"
+        "user.h": "c",
+        "cstdlib": "c"
     }
 }
