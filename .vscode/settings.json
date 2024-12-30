@@ -12,6 +12,7 @@
         "streambuf": "c",
         "stat.h": "c",
         "cmath": "c",
-        "type_traits": "c"
+        "type_traits": "c",
+        "fs.h": "c"
     }
 }
