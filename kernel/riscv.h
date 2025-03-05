@@ -345,15 +345,21 @@ typedef uint64 *pagetable_t; // 512 PTEs
 #define PTE_U (1L << 4) // user can access
 
 // shift a physical address to the right place for a PTE.
+//右移12位去掉页内偏移
+//左移10位得到标志位
 #define PA2PTE(pa) ((((uint64)pa) >> 12) << 10)
 
+//与PA2PTE相反
 #define PTE2PA(pte) (((pte) >> 10) << 12)
 
+//获得标志信息0x3FF=0x11 1111 1111刚好10个1
 #define PTE_FLAGS(pte) ((pte) & 0x3FF)
 
 // extract the three 9-bit page table indices from a virtual address.
 #define PXMASK          0x1FF // 9 bits
+//计算虚拟地址中对应层级 level 的索引位的起始位置
 #define PXSHIFT(level)  (PGSHIFT+(9*(level)))
+//从虚拟地址 va 中提取出指定层级 level 的页表索引
 #define PX(level, va) ((((uint64) (va)) >> PXSHIFT(level)) & PXMASK)
 
 // one beyond the highest possible virtual address.
