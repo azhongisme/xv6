@@ -450,3 +450,65 @@ copyinstr(pagetable_t pagetable, char *dst, uint64 srcva, uint64 max)
     return -1;
   }
 }
+
+//print the pagetable
+void
+recursionprint(pagetable_t pagetable, int level) {
+  for(int i = 0; i < 512; i++){
+    pte_t pte = pagetable[i];
+    if(pte & PTE_V){
+      // this PTE points to a lower-level page table.
+      uint64 pa = PTE2PA(pte);
+      switch (level)
+      {
+      case 2:
+        printf("..%d: pte %p pa %p\n", i, pte, pa);
+        recursionprint((pagetable_t)pa, level - 1);
+      break;
+      case 1:
+        printf(".. ..%d: pte %p pa %p\n", i, pte, pa);
+        recursionprint((pagetable_t)pa, level - 1);
+      default:
+        printf(".. .. ..%d: pte %p pa %p\n", i, pte, pa);
+      }
+    }
+  }
+}
+
+void
+loopprint(pagetable_t pagetable) {
+  for(int i = 0; i < 512; i++){
+    pte_t pte = pagetable[i];
+    if(pte & PTE_V){
+      uint64 pa2 = PTE2PA(pte);
+      printf("..%d: pte %p pa %p\n", i, pte, pa2);
+
+      for(int j = 0; j < 512; j++){
+        pagetable_t pagetable1 = (pagetable_t)pa2;
+        pte_t pte = pagetable1[j];
+
+        if(pte & PTE_V){
+          uint64 pa1 = PTE2PA(pte);
+          printf(".. ..%d: pte %p pa %p\n", j, pte, pa1);
+
+          for(int k = 0; k < 512; k++){
+            pagetable_t pagetable0 = (pagetable_t)pa1;
+            pte_t pte = pagetable0[k];
+
+            if(pte & PTE_V){
+              uint64 pa0 = PTE2PA(pte);
+              printf(".. .. ..%d: pte %p pa %p\n", k, pte, pa0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+void
+vmprint(pagetable_t pagetable) {
+  printf("page table %p\n", *pagetable);
+  // recursionprint(pagetable, 2);
+  loopprint(pagetable);
+}
