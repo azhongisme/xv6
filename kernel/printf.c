@@ -122,6 +122,7 @@ panic(char *s)
   printf("panic: ");
   printf(s);
   printf("\n");
+  backtrace();
   panicked = 1; // freeze uart output from other CPUs
   for(;;)
     ;
@@ -132,4 +133,22 @@ printfinit(void)
 {
   initlock(&pr.lock, "pr");
   pr.locking = 1;
+}
+
+// fp栈顶指针
+// ra=fp-8,
+// 寄存器 s0 包含对当前栈帧的指针（它实际上指向栈上保存的返回地址的地址加上 8）
+// fp的值为当前栈的地址
+void
+backtrace(void)
+{
+  uint64 fp = r_fp();
+  uint64 num = PGROUNDDOWN(fp);
+  // 给定栈的所有栈帧在同一页上
+  // PGROUNDDOWN得到当前页最低地址
+  while(PGROUNDDOWN(fp) == num){
+    uint64 ra = *(uint64 *)(fp - 8);
+    printf("%p\n",ra);
+    fp = *(uint64*)(fp - 16);
+  }
 }
