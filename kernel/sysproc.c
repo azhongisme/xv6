@@ -92,3 +92,20 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+//将tick和函数指针handler传入内核
+uint64
+sys_sigalarm(){
+  int ticks;
+  argint(0, &ticks);
+  uint64 handler_addr;
+  argaddr(1, &handler_addr);
+  struct proc *p = myproc();
+  p->handler = (void(*))handler_addr;
+  return 0;
+}
+
+uint64
+sys_sigreturn(){
+  return 0;
+}
