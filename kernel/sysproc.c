@@ -96,16 +96,21 @@ sys_uptime(void)
 //将tick和函数指针handler传入内核
 uint64
 sys_sigalarm(){
-  int ticks;
-  argint(0, &ticks);
-  uint64 handler_addr;
-  argaddr(1, &handler_addr);
   struct proc *p = myproc();
-  p->handler = (void(*))handler_addr;
+  int interval;
+  argint(0, &interval);
+  uint64 handler;
+  argaddr(1, &handler);
+  // printf("hadler %p\n", handler);
+  p->alarm_interval = interval;
+  p->handler = (void (*)()) handler;
   return 0;
 }
 
 uint64
 sys_sigreturn(){
-  return 0;
+  struct proc *p = myproc();
+  memmove((void*)p->trapframe, (void*)(p->alarm_frame), PGSIZE);
+  p->ticks_from_last_alarm = 0;
+  return p->alarm_frame->a0;
 }
