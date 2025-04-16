@@ -104,6 +104,7 @@ sys_sigalarm(){
   // printf("hadler %p\n", handler);
   p->alarm_interval = interval;
   p->handler = (void (*)()) handler;
+  p->ticks_from_last_alarm = 0;
   return 0;
 }
 

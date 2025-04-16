@@ -80,13 +80,16 @@ usertrap(void)
   if(which_dev == 2) {
     if (!p->alarm_interval && !p->handler) {}
     else {
-      p->ticks_from_last_alarm++;
-      if (p->alarm_interval != 0 && p->alarm_interval == p->ticks_from_last_alarm) {
-        memmove((void*)p->alarm_frame, (void*)(p->trapframe), PGSIZE);
-        p->trapframe->epc = (uint64)p->handler;
-        // printf("epc %p\n", p->trapframe->epc);
-        p->ticks_from_last_alarm = 0;
+      if (p->ticks_from_last_alarm < p->alarm_interval) {
+        uint d = ticks - p->cur_ticks;
+        p->ticks_from_last_alarm += d;
+        if (p->ticks_from_last_alarm >= p->alarm_interval) {
+          p->cur_ticks = ticks;
+          memmove((void*)p->alarm_frame, (void*)p->trapframe, sizeof(struct trapframe));
+          p->trapframe->epc = (uint64)p->handler;
+        }
       }
+      
     }
 
     yield();

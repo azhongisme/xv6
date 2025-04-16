@@ -88,6 +88,7 @@ struct proc {
   int alarm_interval;
   void (*handler)();
   int ticks_from_last_alarm;
+  int cur_ticks;
   struct trapframe *alarm_frame;
   
   // p->lock must be held when using these:
