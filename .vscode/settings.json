@@ -1,0 +1,21 @@
+{
+  "makefile.extensionOutputFolder": "./.vscode",
+  "files.associations": {
+    "*.sqlbook": "sql",
+    "*.ndjson": "jsonl",
+    "*.dbclient-js": "javascript",
+    "memlayout.h": "c",
+    "*.tcc": "c",
+    "rope": "c",
+    "slist": "c",
+    "shared_mutex": "c",
+    "*.inc": "c",
+    "riscv.h": "c",
+    "semaphore": "c",
+    "stop_token": "c",
+    "refcount.h": "c",
+    "defs.h": "c",
+    "param.h": "c",
+    "spinlock.h": "c"
+  }
+}

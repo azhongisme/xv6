@@ -1,0 +1,1224 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Apr 23 14:07:28 2025
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+MEMORY_PRESSURE_WRITE = c29tZSAyMDAwMDAgMjAwMDAwMAA=
+# makefile (from 'Makefile', line 85)
+AS = $(TOOLPREFIX)gas
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+FONTCONFIG_PATH = /etc/fonts
+# makefile (from 'Makefile', line 94)
+XCFLAGS = -DSOL_$(LABUPPER) -DLAB_$(LABUPPER)
+# makefile (from 'Makefile', line 282)
+QEMUGDB = $(shell if $(QEMU) -help | grep -q '^-gdb'; then echo "-gdb tcp::$(GDBPORT)"; else echo "-s -p $(GDBPORT)"; fi)
+# makefile (from 'Makefile', line 143)
+ULIB = $U/ulib.o $U/usys.o $U/printf.o $U/umalloc.o
+# environment
+DEVECOSTUDIO_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/devecostudio.vmoptions
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+SNAP_LAUNCHER_ARCH_TRIPLET = x86_64-linux-gnu
+# makefile (from 'Makefile', line 280)
+GDBPORT = $(shell expr `id -u` % 5000 + 25000)
+# environment
+LC_NAME = C.UTF-8
+# environment
+LC_NUMERIC = C.UTF-8
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = /home/azhong
+# environment
+LC_ADDRESS = C.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+APPLICATIONINSIGHTS_CONFIGURATION_CONTENT = {}
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/188/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+STUDIO_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/studio.vmoptions
+# makefile (from 'Makefile', line 8)
+K = kernel
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/azhong/Desktop/xv6
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'conf/lab.mk', line 1)
+LAB = cow
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_DATA_DIRS = /home/azhong/snap/code/188/.local/share:/home/azhong/snap/code/188:/snap/code/188/usr/share:/home/azhong/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+SNAP_EUID = 1000
+# environment
+OLDPWD = /home/azhong
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/azhong/.config/Code/CachedData/4437686ffebaf200fa4a6e6e67f735f3edf24ada
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.X3YI52
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# environment
+MEMORY_PRESSURE_WATCH = /sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure
+# makefile
+MAKEFLAGS = pqrR
+# environment
+GOLAND_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/goland.vmoptions
+# makefile
+CURDIR := /home/azhong/Desktop/xv6
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = file:///home/azhong/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.99.2025041609/translations/extensions/vscode.json-language-features.i18n.json
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+JETBRAINSCLIENT_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/jetbrainsclient.vmoptions
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'kernel/vm.d', line 1)
+MAKEFILE_LIST := Makefile conf/lab.mk kernel/kalloc.d kernel/main.d kernel/proc.d kernel/string.d kernel/syscall.d kernel/sysproc.d kernel/trap.d kernel/vm.d
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /home/azhong/.oh-my-zsh
+# environment
+VSCODE_PID = 4566
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+CLION_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/clion.vmoptions
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from 'Makefile', line 292)
+FWDPORT = $(shell expr `id -u` % 5000 + 25999)
+# makefile (from 'Makefile', line 93)
+LABUPPER = $(shell echo $(LAB) | tr a-z A-Z)
+# environment
+XDG_DATA_HOME = /home/azhong/snap/code/188/.local/share
+# environment
+SESSION_MANAGER = local/azhong:@/tmp/.ICE-unix/2944,unix/azhong:/tmp/.ICE-unix/2944
+# automatic
+*F = $(notdir $*)
+# environment
+APPCODE_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/appcode.vmoptions
+# environment
+CHROME_DESKTOP = code.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/snap/code/188/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/azhong/.config/Code/clp/e29fa1bf597cf39176d8202ce543e6d3.zh-cn/tcf.json","messagesFile":"/home/azhong/.config/Code/clp/e29fa1bf597cf39176d8202ce543e6d3.zh-cn/4437686ffebaf200fa4a6e6e67f735f3edf24ada/nls.messages.json","corruptMarkerFile":"/home/azhong/.config/Code/clp/e29fa1bf597cf39176d8202ce543e6d3.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"e29fa1bf597cf39176d8202ce543e6d3.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/azhong/.config/Code/clp/e29fa1bf597cf39176d8202ce543e6d3.zh-cn/tcf.json","_cacheRoot":"/home/azhong/.config/Code/clp/e29fa1bf597cf39176d8202ce543e6d3.zh-cn","_resolvedLanguagePackCoreLocation":"/home/azhong/.config/Code/clp/e29fa1bf597cf39176d8202ce543e6d3.zh-cn/4437686ffebaf200fa4a6e6e67f735f3edf24ada","_corruptedFile":"/home/azhong/.config/Code/clp/e29fa1bf597cf39176d8202ce543e6d3.zh-cn/corrupted.info"}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 11)
+OBJS = $K/entry.o $K/kalloc.o $K/string.o $K/main.o $K/vm.o $K/proc.o $K/swtch.o $K/trampoline.o $K/trap.o $K/syscall.o $K/sysproc.o $K/bio.o $K/fs.o $K/log.o $K/sleeplock.o $K/file.o $K/pipe.o $K/exec.o $K/sysfile.o $K/kernelvec.o $K/plic.o $K/virtio_disk.o $K/refcount.o
+# environment
+GTK_PATH = /snap/code/188/usr/lib/x86_64-linux-gnu/gtk-3.0
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile (from 'Makefile', line 9)
+U = user
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+PHPSTORM_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/phpstorm.vmoptions
+# environment
+RUBYMINE_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/rubymine.vmoptions
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 88)
+OBJDUMP = $(TOOLPREFIX)objdump
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from 'Makefile', line 213)
+UPROGS = $U/_cat $U/_echo $U/_forktest $U/_grep $U/_init $U/_kill $U/_ln $U/_ls $U/_mkdir $U/_rm $U/_sh $U/_stressfs $U/_usertests $U/_grind $U/_wc $U/_zombie $U/_cowtest  $U/_cowtest
+# environment
+SNAP_COOKIE = XQbX5CBcDV1ZGtTb-eqEG46eP0Ib_81GkEhAGGoLFdnF_vAI-3Fm
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = zh_CN:en
+# environment
+LC_MONETARY = C.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/azhong/snap/code/common
+# makefile (from 'Makefile', line 36)
+OBJS_KCSAN = $K/start.o $K/console.o $K/printf.o $K/uart.o $K/spinlock.o
+# environment
+LC_TIME = C.UTF-8
+# environment
+WEBIDE_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/webide.vmoptions
+# environment
+SNAP = /snap/code/188
+# environment
+PYCHARM_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/pycharm.vmoptions
+# environment
+RIDER_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/rider.vmoptions
+# environment
+IDEA_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/idea.vmoptions
+# environment
+INVOCATION_ID = cd9eabdd73a94115b37b52ddca55d044
+# environment
+SNAP_REVISION = 188
+# environment
+SNAP_REAL_HOME = /home/azhong
+# environment
+FONTCONFIG_FILE = /etc/fonts/fonts.conf
+# environment
+USERNAME = azhong
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = C.UTF-8
+# automatic
+?F = $(notdir $?)
+# environment
+GTK_IM_MODULE_FILE = /home/azhong/snap/code/common/.cache/immodules/immodules.cache
+# environment
+DATAGRIP_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/datagrip.vmoptions
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+WEBSTORM_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/webstorm.vmoptions
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+LOCPATH = /snap/code/188/usr/lib/locale
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+DATASPELL_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/dataspell.vmoptions
+# environment
+XDG_DATA_DIRS_VSCODE_SNAP_ORIG = /home/azhong/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+LOGNAME = azhong
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := kernel/kernel
+# environment
+SYSTEMD_EXEC_PID = 2977
+# makefile (from 'Makefile', line 82)
+QEMU = qemu-system-riscv64
+# environment
+DISPLAY = :0
+# environment
+USER = azhong
+# environment
+GTK_MODULES = gail:atk-bridge
+ 
+make: *** No rule to make target 'all'.  Stop.
+
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 1
+# environment
+SNAP_DATA = /var/snap/code/188
+# environment
+SNAP_CONTEXT = XQbX5CBcDV1ZGtTb-eqEG46eP0Ib_81GkEhAGGoLFdnF_vAI-3Fm
+# makefile (from 'Makefile', line 121)
+LDFLAGS = -z max-page-size=4096
+# environment
+MANAGERPID = 2767
+# environment
+LC_MEASUREMENT = C.UTF-8
+# environment
+NODE_TLS_REJECT_UNAUTHORIZED = undefined
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4500
+# environment
+PAGER = less
+# environment
+JETBRAINS_CLIENT_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/jetbrains_client.vmoptions
+# environment
+_ = /snap/code/188/usr/share/code/code
+# environment
+LC_PAPER = C.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 115)
+CFLAGS = -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 $(XCFLAGS) -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. $(shell $(CC) -fno-stack-protector -E -x c /dev/null >/dev/null 2>&1 && echo -fno-stack-protector) -fno-pie -no-pie
+# environment
+SNAP_UID = 1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/azhong/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+GIO_MODULE_DIR = /home/azhong/snap/code/common/.cache/gio-modules
+# environment
+JOURNAL_STREAM = 9:27142
+# makefile (from 'Makefile', line 286)
+CPUS := 3
+# environment
+XDG_SESSION_CLASS = user
+# environment
+GSM_SKIP_SSH_AGENT_WORKAROUND = true
+# environment
+HOME = /home/azhong
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 70)
+TOOLPREFIX := riscv64-linux-gnu-
+# makefile (from 'Makefile', line 330)
+GRADEFLAGS = -v
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-1460ed5d-1.99-main.sock
+# environment
+GTK_EXE_PREFIX = /snap/code/188/usr
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /home/azhong/snap/code/188/.local/share/glib-2.0/schemas
+# environment
+PAPERSIZE = a4
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 4437686f
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 86)
+LD = $(TOOLPREFIX)ld
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 297)
+QEMUOPTS = -machine virt -bios none -kernel $K/kernel -m 128M -smp $(CPUS) -nographic -global virtio-mmio.force-legacy=false -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0
+# makefile (from 'Makefile', line 258)
+UEXTRA = 
+# makefile (from 'Makefile', line 84)
+CC = $(TOOLPREFIX)gcc
+# environment
+GATEWAY_VM_OPTIONS = /home/azhong/Desktop/Linux/vmoptions/gateway.vmoptions
+# makefile (from 'Makefile', line 87)
+OBJCOPY = $(TOOLPREFIX)objcopy
+# environment
+SNAP_USER_DATA = /home/azhong/snap/code/188
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = C.UTF-8
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=185/1024=18%, Rehash=0, Collisions=94/469=20%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# kernel (device 66316, inode 22427212): 68 files, no impossibilities.
+# . (device 66316, inode 21893982): 19 files, no impossibilities.
+# user (device 66316, inode 22427260): 26 files, no impossibilities.
+
+# 113 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+kernel/%.o: kernel/%.c
+#  recipe to execute (from 'Makefile', line 131):
+	$(CC) $(CFLAGS) $(EXTRAFLAG) -c -o $@ $<
+
+_%: %.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+#  recipe to execute (from 'Makefile', line 150):
+	$(LD) $(LDFLAGS) -T $U/user.ld -o $@ $^
+	$(OBJDUMP) -S $@ > $*.asm
+	$(OBJDUMP) -t $@ | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > $*.sym
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# makefile (from 'Makefile', line 128)
+kernel/proc.o: EXTRAFLAG := 
+kernel/proc.o: kernel/proc.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/spinlock.h kernel/proc.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'Makefile', line 128)
+kernel/log.o: EXTRAFLAG := 
+# Not a target:
+kernel/log.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+kernel/proc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/string.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/printf.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/trap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/uart.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_echo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_kill:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/sysfile.o: EXTRAFLAG := 
+# Not a target:
+kernel/sysfile.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+zipball: clean submit-check
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 369):
+	git archive --verbose --format zip --output lab.zip HEAD
+
+# Not a target:
+.gdbinit.tmpl-riscv:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/console.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/refcount.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/syscall.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_stressfs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/trap.o: EXTRAFLAG := 
+kernel/trap.o: kernel/trap.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/spinlock.h kernel/proc.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+user/initcode: user/initcode.S
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 135):
+	$(CC) $(CFLAGS) -march=rv64g -nostdinc -I. -Ikernel -c $U/initcode.S -o $U/initcode.o
+	$(LD) $(LDFLAGS) -N -e start -Ttext 0 -o $U/initcode.out $U/initcode.o
+	$(OBJCOPY) -S -O binary $U/initcode.out $U/initcode
+	$(OBJDUMP) -S $U/initcode.o > $U/initcode.asm
+
+.PRECIOUS: %.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_init:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/usys.S: user/usys.pl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 155):
+	perl $U/usys.pl > $U/usys.S
+
+# Not a target:
+user/_grep:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+ 
+#  Implicit rule search has been done.
+#  Last modified 2025-04-21 16:56:27.739634788
+#  File has been updated.
+#  Successfully updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/vm.o: EXTRAFLAG := 
+kernel/vm.o: kernel/vm.c kernel/param.h kernel/types.h kernel/memlayout.h kernel/elf.h kernel/riscv.h kernel/defs.h kernel/fs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+submit-check:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 347):
+	@if ! test -d .git; then \
+		echo No .git directory, is this a git repository?; \
+		false; \
+	fi
+	@if test "$$(git symbolic-ref HEAD)" != refs/heads/$(LAB); then \
+		git branch; \
+		read -p "You are not on the $(LAB) branch.  Hand-in the current branch? [y/N] " r; \
+		test "$$r" = y; \
+	fi
+	@if ! git diff-files --quiet || ! git diff-index --quiet --cached HEAD; then \
+		git status -s; \
+		echo; \
+		echo "You have uncomitted changes.  Please commit or stash them."; \
+		false; \
+	fi
+	@if test -n "`git status -s`"; then \
+		git status -s; \
+		read -p "Untracked files will not be handed in.  Continue? [y/N] " r; \
+		test "$$r" = y; \
+	fi
+
+# Not a target:
+kernel/riscv.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fs.img: mkfs/mkfs README user/_cat user/_echo user/_forktest user/_grep user/_init user/_kill user/_ln user/_ls user/_mkdir user/_rm user/_sh user/_stressfs user/_usertests user/_grind user/_wc user/_zombie user/_cowtest user/_cowtest
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 265):
+	mkfs/mkfs fs.img README $(UEXTRA) $(UPROGS)
+
+# Not a target:
+kernel/proc.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/proc.d:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-23 14:07:27.326996188
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_grind:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+print-gdbport:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 334):
+	@echo $(GDBPORT)
+
+# Not a target:
+kernel/spinlock.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 270):
+	rm -f *.tex *.dvi *.idx *.aux *.log *.ind *.ilg \
+	*/*.o */*.d */*.asm */*.sym \
+	$U/initcode $U/initcode.out $K/kernel fs.img \
+	mkfs/mkfs .gdbinit \
+        $U/usys.S \
+	$(UPROGS) \
+	*.zip \
+	ph barrier
+
+# Not a target:
+user/_zombie:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/vm.d:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-23 14:07:26.652646017
+#  File has been updated.
+#  Successfully updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/main.o: EXTRAFLAG := 
+kernel/main.o: kernel/main.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+user/usys.o: user/usys.S
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 158):
+	$(CC) $(CFLAGS) -c -o $U/usys.o $U/usys.S
+
+# makefile (from 'Makefile', line 128)
+kernel/fs.o: EXTRAFLAG := 
+# Not a target:
+kernel/fs.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+mkfs/mkfs: mkfs/mkfs.c kernel/fs.h kernel/param.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 167):
+	gcc $(XCFLAGS) -Werror -Wall -I. -o mkfs/mkfs mkfs/mkfs.c
+
+grade:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 337):
+	@echo $(MAKE) clean
+	@$(MAKE) clean || \
+          (echo "'make clean' failed.  HINT: Do you have another running instance of xv6?" && exit 1)
+	./grade-lab-$(LAB) $(GRADEFLAGS)
+
+# Not a target:
+kernel/start.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/virtio_disk.o: EXTRAFLAG := 
+# Not a target:
+kernel/virtio_disk.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+kernel/string.d:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-23 14:07:26.171388351
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/types.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/plic.o: EXTRAFLAG := 
+# Not a target:
+kernel/plic.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+kernel/sysproc.d:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-23 14:07:28.205430707
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/kernel.ld:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/printf.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/entry.o: EXTRAFLAG := 
+# Not a target:
+kernel/entry.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'Makefile', line 128)
+kernel/pipe.o: EXTRAFLAG := 
+# Not a target:
+kernel/pipe.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+kernel/param.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_ls:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/spinlock.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/kalloc.o: EXTRAFLAG := 
+kernel/kalloc.o: kernel/kalloc.c kernel/refcount.h kernel/types.h kernel/riscv.h kernel/memlayout.h kernel/spinlock.h kernel/param.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+kernel/kalloc.d:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-23 14:07:25.981285875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_usertests:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/bio.o: EXTRAFLAG := 
+# Not a target:
+kernel/bio.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/kalloc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_cowtest:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/trampoline.o: EXTRAFLAG := 
+# Not a target:
+kernel/trampoline.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+ 
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+user/forktest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+kernel/vm.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/trap.d:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-23 14:07:27.700183512
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/usys.pl:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/initcode.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/ulib.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/syscall.o: EXTRAFLAG := 
+kernel/syscall.o: kernel/syscall.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/spinlock.h kernel/proc.h kernel/syscall.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+kernel/fs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/exec.o: EXTRAFLAG := 
+# Not a target:
+kernel/exec.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'Makefile', line 128)
+kernel/string.o: EXTRAFLAG := 
+kernel/string.o: kernel/string.c kernel/types.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+user/_cat:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/sleeplock.o: EXTRAFLAG := 
+# Not a target:
+kernel/sleeplock.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'Makefile', line 128)
+kernel/refcount.o: EXTRAFLAG := 
+# Not a target:
+kernel/refcount.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+mkfs/mkfs.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+qemu: kernel/kernel fs.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 305):
+	$(QEMU) $(QEMUOPTS)
+
+# Not a target:
+user/_wc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+%.o:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/kernelvec.o: EXTRAFLAG := 
+# Not a target:
+kernel/kernelvec.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+user/_rm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+conf/lab.mk:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-17 14:32:15.014528995
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_sh:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/syscall.d:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-23 14:07:27.929298518
+#  File has been updated.
+#  Successfully updated.
+
+kernel/kernel: kernel/entry.o kernel/kalloc.o kernel/string.o kernel/main.o kernel/vm.o kernel/proc.o kernel/swtch.o kernel/trampoline.o kernel/trap.o kernel/syscall.o kernel/sysproc.o kernel/bio.o kernel/fs.o kernel/log.o kernel/sleeplock.o kernel/file.o kernel/pipe.o kernel/exec.o kernel/sysfile.o kernel/kernelvec.o kernel/plic.o kernel/virtio_disk.o kernel/refcount.o kernel/start.o kernel/console.o kernel/printf.o kernel/uart.o kernel/spinlock.o kernel/kernel.ld user/initcode
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 124):
+	$(LD) $(LDFLAGS) -T $K/kernel.ld -o $K/kernel $(OBJS) $(OBJS_KCSAN)
+	$(OBJDUMP) -S $K/kernel > $K/kernel.asm
+	$(OBJDUMP) -t $K/kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > $K/kernel.sym
+
+# Not a target:
+user/umalloc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+qemu-gdb: kernel/kernel .gdbinit fs.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 311):
+	@echo "*** Now run 'gdb' in another window." 1>&2
+	$(QEMU) $(QEMUOPTS) -S $(QEMUGDB)
+
+# Not a target:
+kernel/defs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/elf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/syscall.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_mkdir:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_init:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: zipball clean grade submit-check
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/memlayout.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+README:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/_forktest: user/forktest.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 161):
+	# forktest has less library code linked in - needs to be small
+	# in order to be able to max out the proc table.
+	$(LD) $(LDFLAGS) -N -e main -Ttext 0 -o $U/_forktest $U/forktest.o $U/ulib.o $U/usys.o
+	$(OBJDUMP) -S $U/_forktest > $U/forktest.asm
+
+tags: kernel/entry.o kernel/kalloc.o kernel/string.o kernel/main.o kernel/vm.o kernel/proc.o kernel/swtch.o kernel/trampoline.o kernel/trap.o kernel/syscall.o kernel/sysproc.o kernel/bio.o kernel/fs.o kernel/log.o kernel/sleeplock.o kernel/file.o kernel/pipe.o kernel/exec.o kernel/sysfile.o kernel/kernelvec.o kernel/plic.o kernel/virtio_disk.o kernel/refcount.o _init
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 141):
+	etags *.S *.c
+
+# makefile (from 'Makefile', line 128)
+kernel/sysproc.o: EXTRAFLAG := 
+kernel/sysproc.o: kernel/sysproc.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/param.h kernel/memlayout.h kernel/spinlock.h kernel/proc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'Makefile', line 128)
+kernel/swtch.o: EXTRAFLAG := 
+# Not a target:
+kernel/swtch.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+kernel/sysproc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/main.d:
+#  Implicit rule search has been done.
+#  Last modified 2025-04-23 14:07:26.282447812
+#  File has been updated.
+#  Successfully updated.
+
+.gdbinit: .gdbinit.tmpl-riscv
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 308):
+	sed "s/:1234/:$(GDBPORT)/" < $^ > $@
+
+# Not a target:
+user/*.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# makefile (from 'Makefile', line 128)
+kernel/file.o: EXTRAFLAG := 
+# Not a target:
+kernel/file.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# files hash-table stats:
+# Load=107/1024=10%, Rehash=0, Collisions=18/314=6%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 217 / storage = 2341 B / avg = 10 B
+# current buf: size = 8162 B / used = 2341 B / count = 217 / avg = 10 B
+
+# strcache performance: lookups = 382 / hit rate = 43%
+# hash-table stats:
+# Load=217/8192=3%, Rehash=0, Collisions=0/382=0%
+# Finished Make data base on Wed Apr 23 14:07:28 2025
+
+ 
