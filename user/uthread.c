@@ -66,6 +66,10 @@ thread_schedule(void)
      * Invoke thread_switch to switch from t to next_thread:
      * thread_switch(??, ??);
      */
+
+    // the content of context is only be changed when switch
+    // sd s0 16(a0) is register s0 write to &context.s0
+    // when the function process, the context is not be changed, but the register changed.
     thread_switch((uint64)&t->context, (uint64)&next_thread->context);
   } else
     next_thread = 0;
